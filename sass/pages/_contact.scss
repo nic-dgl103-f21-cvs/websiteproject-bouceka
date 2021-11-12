@@ -1,0 +1,119 @@
+@import '../abstract/variables';
+@import '../abstract/mixins';
+
+.contact {
+  margin-top: 3rem;
+
+  &__content {
+    margin-top: 5rem;
+    display: flex;
+
+    @media (max-width: 600px) {
+			display: block;
+    }
+  }
+
+#map {
+	height: 400px;
+	/* The height is 400 pixels */
+	width: 100%;
+	/* The width is the width of the web page */
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  &__form {
+    flex: 1;
+    padding-right: 10rem;
+		@media (max-width: 600px) {
+			padding-right: 0;
+			margin-bottom: 5rem;
+    }
+
+    .form-item {
+      padding: 1rem 0;
+
+      input {
+        outline: none;
+        width: 100%;
+        height: 5.5rem;
+        border: 2px solid $color-accent;
+        background-color: $color-grey-dark;
+        font: inherit;
+        padding-left: 1rem;
+      }
+
+      textarea {
+        padding: 0.5rem 0.5rem 0 1rem;
+        width: 100%;
+        height: 10.5rem;
+        border: 2px solid $color-accent;
+        background-color: $color-grey-dark;
+        resize: none;
+        font: inherit;
+        outline: none;
+        display: block;
+      }
+
+      .error {
+        border-color: $color-alert;
+        border-radius: 3px 3px 0 0;
+
+        &__message {
+          background-color: $color-alert;
+          border-radius: 0 0 3px 3px;
+          padding: 0.5rem 1rem;
+          color: #fff;
+        }
+      }
+    }
+
+    button {
+      background: none;
+      background-color: $color-accent;
+      color: $color-white;
+      border: 1px solid $color-secondary;
+      padding: 0.8rem 4rem;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit;
+    }
+  }
+
+  &__info {
+    flex: 1;
+    & > div {
+      margin: 1rem 0;
+
+      h4 {
+        padding-bottom: 1rem;
+      }
+    }
+  }
+
+  &__opening-hours {
+    .time {
+      display: flex;
+    }
+  }
+
+  .google-map {
+    margin: 5rem 0;
+    border: 2px solid $color-primary;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid $color-dark;
+    padding: 1rem 0.5rem;
+    margin-bottom: 5rem;
+
+		@include respond(tab-port) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+}

@@ -8,3 +8,8 @@ This is your remote repository for your website project. All the instructions ar
 5. Add comments to highlight features and decisions.
 6. Validate your work (both HTML and CSS) and fix bugs (don't forget to take screenshots of the final validation).
 7. Test your website as detailed in the intructions and fix any issues (don't forget to take screenshots of the final testing).
+
+
+# Instructions
+
+1. Live server is installed globally

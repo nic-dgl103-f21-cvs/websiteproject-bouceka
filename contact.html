@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css" />
+	<title>Document</title>
+	<script defer src="./js/script.js"></script>
+
+	<script>
+		function initMap() {
+			const fourQuarters = { lat: 49.61932881831001, lng: -125.02731301534504 };
+			const map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 17,
+				center: fourQuarters,
+			});
+			// The marker, positioned at Uluru
+			const marker = new google.maps.Marker({
+				position: fourQuarters,
+				map: map,
+			});
+		}
+	</script>
+</head>
+
+<body>
+
+
+	<nav class="sticky">
+		<div class="row">
+			<div class="main-nav">
+				<a class="main-nav__logo" href="/">
+					<img src="/assets/top-logo.svg" />
+				</a>
+				<div id="nav-icon">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<ul class="body-text-main static-menu">
+					<li>
+						<a href="/menu.html">
+							Menu
+						</a>
+					</li>
+					<li>
+						<a href="/about-us.html">
+							About Us
+						</a>
+					</li>
+					<li>
+						<a href="/gallery.html">
+							Gallery
+						</a>
+					</li>
+					<li>
+						<a href="/contact.html">
+							Contact
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="collapsed-menu no-active">
+			<ul class="collapsed-list body-text-intro no-active">
+				<li>
+					<a href="/menu.html">Menu</a>
+				</li>
+				<li>
+					<a href="/about-us.html">About Us</a>
+				</li>
+				<li>
+					<a href="/gallery.html">Gallery</a>
+				</li>
+				<li>
+					<a href="/contact.html">Contact</a>
+				</li>
+			</ul>
+			<hr />
+			<div class="social-media">
+				<img class="fill" src="./assets/icons/facebook.svg" />
+				<img class="fill" src="./assets/icons/instagram.svg" />
+				<img class="outline" src="./assets/icons/mail.svg" />
+				<img class="outline" src="./assets/icons/call.svg" />
+			</div>
+		</div>
+	</nav>
+
+	<section class="contact">
+		<div class="row">
+			<h1 class="heading__primary heading">Contact</h1>
+
+			<div class="contact__content">
+				<div class="contact__form">
+					<form action="">
+						<div class="form-item">
+							<input type="text" id="name" placeholder="Name*" />
+						</div>
+						<div class="form-item">
+							<input type="text" id="email" placeholder="Email*" />
+						</div>
+						<div class="form-item">
+							<input type="text" id="phone" placeholder="Phone Number" />
+						</div>
+						<div class="form-item">
+							<textarea id="message" placeholder="Message*"></textarea>
+						</div>
+						<div class="form-item">
+							<p class="small-text">
+								This form is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service
+								apply.
+							</p>
+						</div>
+						<div class="form-item">
+							<button>Submit</button>
+						</div>
+					</form>
+				</div>
+				<div class="contact__info">
+					<div class="contact__address">
+						<h4 class="heading__quantery heading">Address</h4>
+						<img class="footer__icon" src="./assets/icons/location.svg" />
+						<span>2744 Dunsmuir Ave, Cumberland, BC V0R 1S0</span>
+					</div>
+					<div class="contact__email">
+						<h4 class="heading__quantery heading">Email</h4>
+						<img class="footer__icon" src="./assets/icons/mail.svg" />
+						<span>info@fourqaurters.ca</span>
+					</div>
+					<div class="contact__phone">
+						<h4 class="heading__quantery heading">Phone Number</h4>
+						<img class="footer__icon" src="./assets/icons/call.svg" />
+						<span>250-400-3687</span>
+					</div>
+					<div class="contact__opening-hours">
+						<h4 class="heading__quantery heading">Opening Hours</h4>
+						<div class="time">
+							<div class="open-hours__icon">
+								<img class="footer__icon" src="./assets/icons/time.svg" />
+							</div>
+							<div class="open-hours__date">
+								<p>Thursday - Monday 9am - 3pm</p>
+								<p>Tuesday - Wednesday CLOSED</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="google-map" id="map">
+				<!-- <MapContainer center={{ lat: 49.61932881831001, lng: -125.02731301534504 }} zoom={19} /> -->
+			</div>
+			<div class="copyright">
+				<p class="small-text">©2021 Four Quarters, All Rights Reserved</p>
+				<div class="footer__links">
+					<img class="footer__social-media" src="./assets/icons/facebook.svg" />
+					<img class="footer__social-media" src="./assets/icons/instagram.svg" />
+					<img class="footer__social-media" src="./assets/icons/mail.svg" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="row">
+			<hr />
+			<div class="footer__content">
+				<div class="flex-container">
+					<div class="column">
+						<img class="footer__logo" src="./assets/logo-label.svg" />
+						<ul class="menu">
+							<li>
+								<a href="/menu.html">Menu</a>
+							</li>
+							<li>
+								<a href="/about-us.html">About us</a>
+							</li>
+							<li>
+								<a href="/gallery.html">Gallery</a>
+							</li>
+						</ul>
+					</div>
+					<div class="column intend">
+						<h3 class="heading heading__quaternary">Contact</h3>
+						<ul class="contact medium-text">
+							<li>
+								<img class="footer__icon" src="./assets/icons/location.svg" />
+								<span>2247 Dunsmuir Ave, Cumberland</span>
+							</li>
+							<li>
+								<img class="footer__icon" src="./assets/icons/mail.svg" />
+								<span>info@fourquarters.ca</span>
+							</li>
+							<li>
+								<img class="footer__icon" src="./assets/icons/call.svg" />
+								<span>250-400-3687</span>
+							</li>
+						</ul>
+					</div>
+					<div class="column intend">
+						<h3 class="heading heading__quaternary">Opening hours</h3>
+						<ul class="contact medium-text">
+							<li class="time">
+								<div class="open-hours__icon">
+									<img class="footer__icon" src="./assets/icons/time.svg" />
+								</div>
+								<div class="open-hours__date">
+									<p>Thursday - Monday 9am - 3pm</p>
+									<p>Tuesday - Wednesday CLOSED</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<hr />
+			<div class="licence">
+				<p class="small-text">©2021 Four Quarters, All Rights Reserved</p>
+				<div class="footer__links">
+					<img class="footer__social-media" src="./assets/icons/facebook.svg" />
+					<img class="footer__social-media" src="./assets/icons/instagram.svg" />
+					<img class="footer__social-media" src="./assets/icons/mail.svg" />
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA14LGWnHiJtshV5QiipOIWdtIrXeGoefk&callback=initMap&libraries=&v=weekly&channel=2"></script>
+</body>
+
+</html>
