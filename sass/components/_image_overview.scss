@@ -9,10 +9,13 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    flex-wrap: wrap;
-
+    @media (max-width: 900px) {
+      flex-wrap: wrap;
+    }
     &__image {
-      width: 24%;
+      & img {
+        width: 100%;
+      }
 
       @media (max-width: 900px) {
         width: 48%;

@@ -1,5 +1,3 @@
-
-
 ///////////////////////////////////////////////////////////
 // Make mobile navigation work
 
@@ -13,10 +11,15 @@ btnNavEl.addEventListener('click', function () {
     listEl[0].classList.add('is-active');
     headerEl[0].classList.remove('no-active');
     listEl[0].classList.remove('no-active');
+	btnNavEl.classList.add('open')
   } else {
     headerEl[0].classList.remove('is-active');
     listEl[0].classList.remove('is-active');
+	btnNavEl.classList.remove('open')
     headerEl[0].classList.add('no-active');
     listEl[0].classList.add('no-active');
+
   }
 });
+
+
