@@ -71,50 +71,62 @@
 			</ul>
 			<hr />
 			<div class="social-media">
-				<img class="fill" src="./assets/icons/facebook.svg" alt="Facebook icon" />
-				<img class="fill" src="./assets/icons/instagram.svg" alt="Instagram icon" />
-				<img class="outline" src="./assets/icons/mail.svg" alt="Mail icon" />
-				<img class="outline" src="./assets/icons/call.svg" alt="Phone icon" />
+				<a href="https://www.facebook.com/4quartersrestaurant" target="_blank">
+					<img class="fill" src="./assets/icons/facebook.svg" alt="Facebook icon" />
+				</a>
+				<a href="https://www.instagram.com/4quarters.cumberland" target="_blank">
+					<img class="fill" src="./assets/icons/instagram.svg" alt="Instagram icon" />
+				</a>
+				<a href="mailto:info@fourqaurters.ca">
+					<img class="outline" src="./assets/icons/mail.svg" alt="Mail icon" />
+				</a>
+				<a href="tel:250-400-3687">
+					<img class="outline" src="./assets/icons/call.svg" alt="Phone icon" />
+				</a>
 			</div>
 		</div>
 	</nav>
 
 	<header class="header">
 		<div class="row">
-			<div class="heading-text">
+			<div class="hero">
 				<div class="promo-text">
 					<h1 class="heading heading__primary">Stand For Something Good</h1>
-					<p class="paragraph">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit morbi porta tortor faucibus
-						accumsan ridiculus. Cras egestas
-						imperdiet non praesent enim massa ut.
+					<p class="hero__description">
+						Come and enjoy your breakfast on the patio with a mountain view. Discover our significant
+						variation of breakfast meals and lunch meals. Our family atmosphere welcomes you.
 					</p>
-					<a class="button button__primary" href="/"> Explore Our Menu </a>
+					<a class="button button__primary" href="/menu.html"> Explore Our Menu </a>
 				</div>
 			</div>
 		</div>
-		<img class="arrow" src="./assets/arrow-down.svg" />
+		<a href="#our-story">
+			<img class="arrow" src="./assets/arrow-down.svg" alt="" />
+		</a>
 	</header>
-	<section class="our-story">
+	<section id="our-story" class="our-story">
 		<div class="title">
 			<h2 class="heading heading__secondary center">Our Story</h2>
 			<p class="heading heading__background">Our Story</p>
 		</div>
 		<div class="row">
 			<div class="section">
-				<img class="image image__story" src="./assets/images/english_muffins.jpg"
-					alt="Homemade English muffins" />
-				<p class="paragraph">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quae quaerat dolorem error dolore
-					debitis, officia autem ab
-					adipisci laborum, iste placeat consequatur repellat magnam reprehenderit ipsum, porro nulla sequi.
-					Lorem ipsum dolor sit amet,
-					consectetur adipisicing elit. Culpa quae quaerat dolorem error dolore debitis, officia autem ab
-					adipisci laborum, iste placeat
-					consequatur repellat magnam reprehenderit ipsum, porro nulla sequi.
+				<figure>
+					<img class="image__story" src="./assets/images/english_muffins.jpg"
+						alt="Homemade English muffins" />
+					<figcaption>Our homemade English muffins</figcaption>
+				</figure>
+				<p class="body-text-main">Welcome to Four Quarters, situated in beautiful Cumberland, British Columbia.
+					Since
+					the summer of 2017, we have been offering breakfast and lunch. All our ingredients are from local
+					producers that we are happy to support. We are proud to be part of the awesome Cumberland community.
 				</p>
-				<img class="image image__story display-none-below-900" src="./assets/images/cupboard_our_story.jpg"
-					alt="Four Quarters interior" />
+				<figure>
+					<img class="image__story display-none-below-900" src="./assets/images/patio_breakfast.jpg"
+						alt="Baked eggs with a fruit bowl on the patio" />
+					<figcaption>Our patio offers Cumberland view</figcaption>
+
+				</figure>
 			</div>
 		</div>
 	</section>
@@ -129,16 +141,16 @@
 					alt="Baked eggs with a fruit bowl" />
 				<ul class="menu-overview__option">
 					<li>
-						<a class="heading heading__quaternary" href="/menu.html">Benedict</a>
+						<a class="heading heading__quaternary" href="/menu.html#benedict">Benedict</a>
 					</li>
 					<li>
-						<a class="heading heading__quaternary" href="/menu.html">Sandwiches</a>
+						<a class="heading heading__quaternary" href="/menu.html#sandwich">Sandwiches</a>
 					</li>
 					<li>
-						<a class="heading heading__quaternary" href="/menu.html">Burgers</a>
+						<a class="heading heading__quaternary" href="/menu.html#samosa">Samosas</a>
 					</li>
 					<li>
-						<a class="heading heading__quaternary" href="/menu.html">Wraps</a>
+						<a class="heading heading__quaternary" href="/menu.html#wrap">Wraps</a>
 					</li>
 				</ul>
 				<img class="menu-overview__image" src="./assets/images/chicken_potato.jpg"
@@ -159,12 +171,11 @@
 					</button>
 					<div class="testimonial__box">
 						<p class="testimonial__content">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus elit feugiat pellentesque
-							non ut netus felis. Morbi at
-							accumsan velit metus dignissim. Pulvinar vitae proin quam tincidunt mauris venenatis
-							ullamcorper.
+							Traveled in from the lower mainland for an event. Such friendly service. Loved the live
+							music playing when I came in for lunch. The fried chicken Benny was perfect to the last
+							bite. Would highly recommend.
 						</p>
-						<span class="testimonial__author small-text">Smith John, 2021</span>
+						<span class="testimonial__author small-text">Justine Flynn, 2021</span>
 					</div>
 					<button class="slider-button">
 						<img src="./assets/icons/chevron/right.svg" alt="" />
@@ -196,18 +207,20 @@
 			<div class="footer__content">
 				<div class="flex-container">
 					<div class="column">
-						<img class="footer__logo" src="./assets/logo-label.svg" />
-						<ul class="menu">
-							<li>
-								<a href="/menu.html">Menu</a>
-							</li>
-							<li>
-								<a href="/about-us.html">About us</a>
-							</li>
-							<li>
-								<a href="/gallery.html">Gallery</a>
-							</li>
-						</ul>
+						<nav>
+							<img class="footer__logo" src="./assets/logo-label.svg" alt="Four Quarters logo" />
+							<ul class="menu">
+								<li>
+									<a href="/menu.html">Menu</a>
+								</li>
+								<li>
+									<a href="/about-us.html">About us</a>
+								</li>
+								<li>
+									<a href="/gallery.html">Gallery</a>
+								</li>
+							</ul>
+						</nav>
 					</div>
 					<div class="column intend">
 						<h3 class="heading heading__quaternary">Contact</h3>
@@ -218,11 +231,15 @@
 							</li>
 							<li>
 								<img class="footer__icon" src="./assets/icons/mail.svg" alt="Mail icon" />
-								<span>info@fourquarters.ca</span>
+								<a href="mailto:info@fourqaurters.ca">
+									<span>info@fourquarters.ca</span>
+								</a>
 							</li>
 							<li>
 								<img class="footer__icon" src="./assets/icons/call.svg" alt="Phone icon" />
-								<span>250-400-3687</span>
+								<a href="tel:250-400-3687">
+									<span>250-400-3687</span>
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -246,9 +263,12 @@
 			<div class="licence">
 				<p class="small-text">©2021 Four Quarters, All Rights Reserved</p>
 				<div class="footer__links">
-					<img class="footer__social-media" src="./assets/icons/facebook.svg" alt="Facebook icon" />
-					<img class="footer__social-media" src="./assets/icons/instagram.svg" alt="Instagram icon" />
-					<img class="footer__social-media" src="./assets/icons/mail.svg" alt="Mail icon" />
+					<a href="https://www.facebook.com/4quartersrestaurant" target="_blank">
+						<img class="footer__social-media" src="./assets/icons/facebook.svg" alt="Facebook icon" />
+					</a>
+					<a href="https://www.instagram.com/4quarters.cumberland" target="_blank">
+						<img class="footer__social-media" src="./assets/icons/instagram.svg" alt="Instagram icon" />
+					</a>
 				</div>
 			</div>
 		</div>

@@ -37,6 +37,9 @@ body {
 figure {
   margin: 0;
   padding: 0; }
+  figure figcaption {
+    font-style: italic;
+    color: #a3a3a3; }
 
 body {
   font-family: 'Nunito';
@@ -142,23 +145,22 @@ body {
   height: 100vh;
   position: relative; }
 
-.heading-text {
+.hero {
   display: flex;
   min-height: 100vh;
   color: white;
   align-items: center; }
-
-.paragraph {
-  white-space: pre-line;
-  font-size: 2rem;
-  margin-bottom: 5rem;
-  width: 50%; }
-  @media only screen and (max-width: 56.25em) {
-    .paragraph {
-      width: 70%; } }
-  @media only screen and (max-width: 37.5em) {
-    .paragraph {
-      font-size: 1.8rem; } }
+  .hero__description {
+    white-space: pre-line;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    width: 50%; }
+    @media only screen and (max-width: 56.25em) {
+      .hero__description {
+        width: 70%; } }
+    @media only screen and (max-width: 37.5em) {
+      .hero__description {
+        font-size: 1.8rem; } }
 
 .button {
   text-decoration: none;
@@ -290,14 +292,17 @@ body {
   @media only screen and (max-width: 56.25em) {
     .footer__links {
       margin: 2rem 0; } }
+  .footer__links > a {
+    text-decoration: none;
+    margin-right: .5rem; }
+    .footer__links > a:last-child {
+      margin-right: 0; }
   .footer__social-media {
     vertical-align: top;
     margin-right: 1rem;
     height: 3rem;
     width: 3rem;
     cursor: pointer; }
-    .footer__social-media:last-child {
-      margin-right: 0; }
   .footer__logo {
     width: 35rem; }
     @media only screen and (max-width: 56.25em) {
@@ -429,10 +434,10 @@ body {
       font-weight: 600; }
 
 .our-story {
-  margin: 15rem 0 20rem 0; }
+  padding: 15rem 0 20rem 0; }
   @media (max-width: 600px) {
     .our-story {
-      margin: 10rem 0 15rem 0; } }
+      padding: 10rem 0 15rem 0; } }
 
 .section {
   display: flex;
@@ -449,23 +454,25 @@ body {
   position: relative;
   margin-bottom: 3rem; }
 
-.image {
+figure .image__story {
   margin-right: 2rem;
   width: 35rem;
   height: 45rem;
   object-fit: cover; }
   @media (max-width: 1000px) {
-    .image {
+    figure .image__story {
       aspect-ratio: 4/3;
       width: auto;
       height: 35rem;
       margin: 0 0 3rem 0; } }
   @media (max-width: 600px) {
-    .image {
+    figure .image__story {
       height: 25rem; } }
-  .image:last-child {
-    margin-left: 2rem;
-    margin-right: 0; }
+
+figure:last-child .image__story,
+figure:last-child figcaption {
+  margin-left: 2rem;
+  margin-right: 0; }
 
 .testimonial {
   margin: 20rem 0; }
@@ -522,14 +529,16 @@ hr.divider {
   left: 0;
   width: 100%;
   z-index: 2;
-  padding: 7rem 0; }
+  padding: 7rem 0;
+  background-size: cover; }
   .sticky.main-page {
-    background-size: cover;
     background-position: center;
     position: absolute; }
   .sticky.other-page {
     background-image: linear-gradient(to right top, rgba(144, 51, 10, 0.8) 80%, rgba(144, 51, 10, 0.7)), url("../../assets/images/header_background.jpg");
-    border-bottom: 4px solid #edcc90; }
+    border-bottom: 4px solid #edcc90;
+    background-size: cover;
+    background-position-y: 20%; }
   @media only screen and (max-width: 56.25em) {
     .sticky {
       padding: 2rem 0; } }
@@ -619,17 +628,18 @@ hr.divider {
     display: flex;
     margin-top: 2rem;
     justify-content: space-evenly; }
-    .collapsed-menu .social-media > img {
+    .collapsed-menu .social-media a {
       margin-right: 2rem;
-      height: 4rem;
-      width: 4rem;
       cursor: pointer; }
-      .collapsed-menu .social-media > img:last-child {
+      .collapsed-menu .social-media a:last-child {
         margin-right: 0; }
-      .collapsed-menu .social-media > img.fill {
-        filter: invert(99%) sepia(3%) saturate(396%) hue-rotate(218deg) brightness(116%) contrast(100%); }
-      .collapsed-menu .social-media > img.outline {
-        filter: invert(99%) sepia(3%) saturate(396%) hue-rotate(218deg) brightness(116%) contrast(100%); }
+      .collapsed-menu .social-media a > img {
+        height: 4rem;
+        width: 4rem; }
+        .collapsed-menu .social-media a > img.fill {
+          filter: invert(99%) sepia(3%) saturate(396%) hue-rotate(218deg) brightness(116%) contrast(100%); }
+        .collapsed-menu .social-media a > img.outline {
+          filter: invert(99%) sepia(3%) saturate(396%) hue-rotate(218deg) brightness(116%) contrast(100%); }
 
 .no-active {
   display: none; }
@@ -789,9 +799,7 @@ hr.divider {
         display: block; } }
   .contact #map {
     height: 400px;
-    /* The height is 400 pixels */
-    width: 100%;
-    /* The width is the width of the web page */ }
+    width: 100%; }
   .contact h1 {
     text-align: center; }
   .contact__form {
@@ -808,7 +816,7 @@ hr.divider {
         width: 100%;
         height: 5.5rem;
         border: 2px solid #c69c45;
-        background-color: #ebebeb;
+        background-color: background-color;
         font: inherit;
         padding-left: 1rem; }
       .contact__form .form-item textarea {
@@ -816,7 +824,7 @@ hr.divider {
         width: 100%;
         height: 10.5rem;
         border: 2px solid #c69c45;
-        background-color: #ebebeb;
+        background-color: background-color;
         resize: none;
         font: inherit;
         outline: none;
@@ -838,6 +846,9 @@ hr.divider {
       font: inherit;
       cursor: pointer;
       outline: inherit; }
+  .contact a {
+    text-decoration: none;
+    color: inherit; }
   .contact__info {
     flex: 1; }
     .contact__info > div {

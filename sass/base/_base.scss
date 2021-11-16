@@ -15,7 +15,8 @@ html {
   // @include respond(tab-port) {
   //   font-size: 55%;
   // }
-  @include respond(tab-land) {//poradi je dulezite
+  @include respond(tab-land) {
+    //poradi je dulezite
     // width < 1200?
     font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
   }
@@ -52,13 +53,18 @@ body {
   }
 }
 
-.display-none-below-900{
-	@media only screen and (max-width: 1000px) {
-		display: none;
+.display-none-below-900 {
+  @media only screen and (max-width: 1000px) {
+    display: none;
   }
 }
 
-figure{
-	margin: 0;
-	padding: 0;
+figure {
+  margin: 0;
+  padding: 0;
+
+  figcaption {
+    font-style: italic;
+    color: $color-grey-dark;
+  }
 }

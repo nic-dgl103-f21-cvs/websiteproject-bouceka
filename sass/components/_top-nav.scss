@@ -10,9 +10,9 @@ hr.divider {
   width: 100%;
   z-index: 2;
   padding: 7rem 0;
+  background-size: cover;
 
   &.main-page {
-    background-size: cover;
     background-position: center;
     position: absolute;
   }
@@ -21,6 +21,8 @@ hr.divider {
     background-image: linear-gradient(to right top, rgba(144, 51, 10, 0.8) 80%, rgba(144, 51, 10, 0.7)),
       url('../../assets/images/header_background.jpg');
     border-bottom: 4px solid $color-secondary;
+    background-size: cover;
+    background-position-y: 20%;
   }
 
   @include respond(tab-port) {
@@ -140,19 +142,22 @@ hr.divider {
     display: flex;
     margin-top: 2rem;
     justify-content: space-evenly;
-    & > img {
+    & a {
       margin-right: 2rem;
-      height: 4rem;
-      width: 4rem;
       cursor: pointer;
+
       &:last-child {
         margin-right: 0;
       }
-      &.fill {
-        filter: invert(99%) sepia(3%) saturate(396%) hue-rotate(218deg) brightness(116%) contrast(100%);
-      }
-      &.outline {
-        filter: invert(99%) sepia(3%) saturate(396%) hue-rotate(218deg) brightness(116%) contrast(100%);
+      & > img {
+        height: 4rem;
+        width: 4rem;
+        &.fill {
+          filter: invert(99%) sepia(3%) saturate(396%) hue-rotate(218deg) brightness(116%) contrast(100%);
+        }
+        &.outline {
+          filter: invert(99%) sepia(3%) saturate(396%) hue-rotate(218deg) brightness(116%) contrast(100%);
+        }
       }
     }
   }

@@ -16,7 +16,6 @@
 </head>
 
 <body>
-
 	<nav class="sticky other-page">
 		<div class="row">
 			<div class="top-nav">
@@ -72,14 +71,21 @@
 			</ul>
 			<hr />
 			<div class="social-media">
-				<img class="fill" src="./assets/icons/facebook.svg" alt="Facebook icon" />
-				<img class="fill" src="./assets/icons/instagram.svg" alt="Instagram icon" />
-				<img class="outline" src="./assets/icons/mail.svg" alt="Mail icon" />
-				<img class="outline" src="./assets/icons/call.svg" alt="Phone icon" />
+				<a href="https://www.facebook.com/4quartersrestaurant" target="_blank">
+					<img class="fill" src="./assets/icons/facebook.svg" alt="Facebook icon" />
+				</a>
+				<a href="https://www.instagram.com/4quarters.cumberland" target="_blank">
+					<img class="fill" src="./assets/icons/instagram.svg" alt="Instagram icon" />
+				</a>
+				<a href="mailto:info@fourqaurters.ca">
+					<img class="outline" src="./assets/icons/mail.svg" alt="Mail icon" />
+				</a>
+				<a href="tel:250-400-3687">
+					<img class="outline" src="./assets/icons/call.svg" alt="Phone icon" />
+				</a>
 			</div>
 		</div>
 	</nav>
-
 
 	<div class="row">
 		<div class="menu-container">
@@ -101,7 +107,7 @@
 						</div>
 					</div>
 					<div class="menu__meals">
-						<div class="menu__meal">
+						<div id="benedict" class="menu__meal">
 							<h4 class="heading__quaternary heading">Classic Benedict</h4>
 							<div class="size">
 								<p>Full Order 18.95</p>
@@ -162,7 +168,7 @@
 								(cashew curry sauce) (vegan &amp; gluten free) *NO EGGS
 							</p>
 						</div>
-						<div class="menu__meal">
+						<div id="sandwich" class="menu__meal">
 							<h4 class="heading__quaternary heading">Breakfast Sandwich - 16.95</h4>
 							<p class="ingredients">
 								Two scrambled local organic free range eggs, house-made apple fennel pork sausage &amp;
@@ -198,7 +204,7 @@
 								warm brioche bun served with your choice of 4Q fries or fresh garden greens
 							</p>
 						</div>
-						<div class="menu__meal">
+						<div id="wrap" class="menu__meal">
 							<h4 class="heading__quaternary heading">Pakora Wrap - 19.00</h4>
 							<p class="ingredients">
 								House made pakoras, onion, tomato, cilantro &amp; mango chutney wrapped up in warm naan
@@ -214,7 +220,7 @@
 								bread served with your choice of 4Q fries or fresh garden greens
 							</p>
 						</div>
-						<div class="menu__meal">
+						<div id="samosa" class="menu__meal">
 							<h4 class="heading__quaternary heading">Samosa &amp; Greens - 17.00</h4>
 							<p class="ingredients">House made samosas served with fresh greens</p>
 						</div>
@@ -237,25 +243,26 @@
 			</div>
 		</div>
 	</div>
-
 	<footer class="footer">
 		<div class="row">
 			<hr />
 			<div class="footer__content">
 				<div class="flex-container">
 					<div class="column">
-						<img class="footer__logo" src="./assets/logo-label.svg" />
-						<ul class="menu">
-							<li>
-								<a href="/menu.html">Menu</a>
-							</li>
-							<li>
-								<a href="/about-us.html">About us</a>
-							</li>
-							<li>
-								<a href="/gallery.html">Gallery</a>
-							</li>
-						</ul>
+						<nav>
+							<img class="footer__logo" src="./assets/logo-label.svg" alt="Four Quarters logo" />
+							<ul class="menu">
+								<li>
+									<a href="/menu.html">Menu</a>
+								</li>
+								<li>
+									<a href="/about-us.html">About us</a>
+								</li>
+								<li>
+									<a href="/gallery.html">Gallery</a>
+								</li>
+							</ul>
+						</nav>
 					</div>
 					<div class="column intend">
 						<h3 class="heading heading__quaternary">Contact</h3>
