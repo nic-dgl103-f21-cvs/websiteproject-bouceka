@@ -19,7 +19,7 @@ hr.divider {
 
   &.other-page {
     background-image: linear-gradient(to right top, rgba(144, 51, 10, 0.8) 80%, rgba(144, 51, 10, 0.7)),
-      url('../../assets/images/header_background.jpg');
+      url('../assets/images/header_background.jpg');
     border-bottom: 4px solid $color-secondary;
     background-size: cover;
     background-position-y: 20%;

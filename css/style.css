@@ -126,20 +126,20 @@ body {
 @font-face {
   font-family: 'Nunito';
   font-weight: 400;
-  src: url("../../assets/fonts/Nunito-Regular.ttf") format("truetype"); }
+  src: url("../assets/fonts/Nunito-Regular.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'American Typewriter';
   font-weight: 400;
-  src: url("../../assets/fonts/AmericanTypewriter-01.ttf") format("truetype"); }
+  src: url("../assets/fonts/AmericanTypewriter-01.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'American Typewriter';
   font-weight: 600;
-  src: url("../../assets/fonts/AmericanTypewriter-Semibold-04.ttf") format("truetype"); }
+  src: url("../assets/fonts/AmericanTypewriter-Semibold-04.ttf") format("truetype"); }
 
 .header {
-  background-image: linear-gradient(to right top, rgba(144, 51, 10, 0.8) 80%, rgba(144, 51, 10, 0.7)), url("../../assets/images/header_background.jpg");
+  background-image: linear-gradient(to right top, rgba(144, 51, 10, 0.8) 80%, rgba(144, 51, 10, 0.7)), url("../assets/images/header_background.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -535,7 +535,7 @@ hr.divider {
     background-position: center;
     position: absolute; }
   .sticky.other-page {
-    background-image: linear-gradient(to right top, rgba(144, 51, 10, 0.8) 80%, rgba(144, 51, 10, 0.7)), url("../../assets/images/header_background.jpg");
+    background-image: linear-gradient(to right top, rgba(144, 51, 10, 0.8) 80%, rgba(144, 51, 10, 0.7)), url("../assets/images/header_background.jpg");
     border-bottom: 4px solid #edcc90;
     background-size: cover;
     background-position-y: 20%; }
