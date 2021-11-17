@@ -277,8 +277,7 @@ body {
         .footer .flex-container ul.contact li a {
           font-size: 2rem;
           text-decoration: none;
-          color: #2e2e2e;
-          padding: 0 1rem; }
+          color: #2e2e2e; }
           .footer .flex-container ul.contact li a:hover {
             color: #edcc90;
             transition: all ease-out 0.2s; }
