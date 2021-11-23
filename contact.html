@@ -1,185 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Do you need a reservation? Don't be shy and contact us. Check out our social media, we post all events there."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <title>Contact | Four Quarters</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="./js/script.js"></script>
+    <script>
+      function initMap() {
+        const fourQuarters = { lat: 49.61932881831001, lng: -125.02731301534504 };
+        const map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: fourQuarters,
+        });
+        const marker = new google.maps.Marker({
+          position: fourQuarters,
+          map: map,
+        });
+      }
+    </script>
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="description"
-		content="Do you need a reservation? Don't be shy and contact us. Check out our social media, we post all events there." />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="icon" href="assets/favicon.png" />
-	<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
-	<title>Four Quarters | Contact</title>
-	<link rel="stylesheet" href="css/style.css" />
-	<script defer src="./js/script.js"></script>
-	<script>
-		function initMap() {
-			const fourQuarters = { lat: 49.61932881831001, lng: -125.02731301534504 };
-			const map = new google.maps.Map(document.getElementById('map'), {
-				zoom: 17,
-				center: fourQuarters,
-			});
-			const marker = new google.maps.Marker({
-				position: fourQuarters,
-				map: map,
-			});
-		}
-	</script>
-</head>
+  <body>
+    <nav class="sticky other-page">
+      <div class="row">
+        <div class="top-nav">
+          <a class="top-nav__logo-label" href="index.html">
+            <img src="./assets/top-logo.svg" alt="Four Quarters logo" />
+          </a>
+          <a class="top-nav__logo-star" href="index.html">
+            <img src="./assets/star-logo.svg" alt="Four Quarters logo" />
+          </a>
+          <div id="nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="body-text-main static-menu">
+            <li>
+              <a href="./menu.html"> Menu </a>
+            </li>
+            <li>
+              <a href="./about-us.html"> About Us </a>
+            </li>
+            <li>
+              <a href="./gallery.html"> Gallery </a>
+            </li>
+            <li>
+              <a href="./contact.html"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="collapsed-menu no-active">
+        <ul class="collapsed-list body-text-intro no-active">
+          <li>
+            <a href="./menu.html">Menu</a>
+          </li>
+          <li>
+            <a href="./about-us.html">About Us</a>
+          </li>
+          <li>
+            <a href="./gallery.html">Gallery</a>
+          </li>
+          <li>
+            <a href="./contact.html">Contact</a>
+          </li>
+        </ul>
+        <hr />
+        <div class="social-media">
+          <a href="https://www.facebook.com/4quartersrestaurant" target="_blank">
+            <img class="fill" src="./assets/icons/facebook.svg" alt="Facebook icon" />
+          </a>
+          <a href="https://www.instagram.com/4quarters.cumberland" target="_blank">
+            <img class="fill" src="./assets/icons/instagram.svg" alt="Instagram icon" />
+          </a>
+          <a href="mailto:info@fourqaurters.ca">
+            <img class="outline" src="./assets/icons/mail.svg" alt="Mail icon" />
+          </a>
+          <a href="tel:250-400-3687">
+            <img class="outline" src="./assets/icons/call.svg" alt="Phone icon" />
+          </a>
+        </div>
+      </div>
+    </nav>
 
-<body>
-	<nav class="sticky other-page">
-		<div class="row">
-			<div class="top-nav">
-				<a class="top-nav__logo-label" href="index.html">
-					<img src="./assets/top-logo.svg" alt="Four Quarters logo" />
-				</a>
-				<a class="top-nav__logo-star" href="index.html">
-					<img src="./assets/star-logo.svg" alt="Four Quarters logo" />
-				</a>
-				<div id="nav-icon">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-				<ul class="body-text-main static-menu">
-					<li>
-						<a href="./menu.html">
-							Menu
-						</a>
-					</li>
-					<li>
-						<a href="./about-us.html">
-							About Us
-						</a>
-					</li>
-					<li>
-						<a href="./gallery.html">
-							Gallery
-						</a>
-					</li>
-					<li>
-						<a href="./contact.html">
-							Contact
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="collapsed-menu no-active">
-			<ul class="collapsed-list body-text-intro no-active">
-				<li>
-					<a href="./menu.html">Menu</a>
-				</li>
-				<li>
-					<a href="./about-us.html">About Us</a>
-				</li>
-				<li>
-					<a href="./gallery.html">Gallery</a>
-				</li>
-				<li>
-					<a href="./contact.html">Contact</a>
-				</li>
-			</ul>
-			<hr />
-			<div class="social-media">
-				<a href="https://www.facebook.com/4quartersrestaurant" target="_blank">
-					<img class="fill" src="./assets/icons/facebook.svg" alt="Facebook icon" />
-				</a>
-				<a href="https://www.instagram.com/4quarters.cumberland" target="_blank">
-					<img class="fill" src="./assets/icons/instagram.svg" alt="Instagram icon" />
-				</a>
-				<a href="mailto:info@fourqaurters.ca">
-					<img class="outline" src="./assets/icons/mail.svg" alt="Mail icon" />
-				</a>
-				<a href="tel:250-400-3687">
-					<img class="outline" src="./assets/icons/call.svg" alt="Phone icon" />
-				</a>
-			</div>
-		</div>
-	</nav>
+    <section class="contact">
+      <div class="row">
+        <h1 class="heading__primary heading">Contact</h1>
 
+        <div class="contact__content">
+          <div class="contact__form">
+            <form action="index.html">
+              <div class="form-item">
+                <input type="text" id="name" placeholder="Name*" required />
+              </div>
+              <div class="form-item">
+                <input type="text" id="email" placeholder="Email*" required />
+              </div>
+              <div class="form-item">
+                <input type="text" id="phone" placeholder="Phone Number" />
+              </div>
+              <div class="form-item">
+                <textarea id="message" placeholder="Message*" required></textarea>
+              </div>
+              <div class="form-item">
+                <p class="small-text">This form is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+              </div>
+              <div class="form-item">
+                <button>Submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="contact__info">
+            <div class="contact__address">
+              <h4 class="body-text-main heading">Address</h4>
+              <img class="footer__icon" src="./assets/icons/location.svg" alt="Address icon" />
+              <span>2744 Dunsmuir Ave, Cumberland, BC V0R 1S0</span>
+            </div>
+            <div class="contact__email">
+              <h4 class="body-text-main heading">Email</h4>
+              <img class="footer__icon" src="./assets/icons/mail.svg" alt="Email icon" />
+              <a href="mailto:info@fourqaurters.ca">
+                <span>info@fourqaurters.ca</span>
+              </a>
+            </div>
+            <div class="contact__phone">
+              <h4 class="body-text-main heading">Phone Number</h4>
+              <img class="footer__icon" src="./assets/icons/call.svg" alt="Phone icon" />
+              <a href="tel:250-400-3687">
+                <span>250-400-3687</span>
+              </a>
+            </div>
 
-	<section class="contact">
-		<div class="row">
-			<h1 class="heading__primary heading">Contact</h1>
-
-			<div class="contact__content">
-				<div class="contact__form">
-					<form action="index.html">
-						<div class="form-item">
-							<input type="text" id="name" placeholder="Name*" required />
-						</div>
-						<div class="form-item">
-							<input type="text" id="email" placeholder="Email*" required />
-						</div>
-						<div class="form-item">
-							<input type="text" id="phone" placeholder="Phone Number" />
-						</div>
-						<div class="form-item">
-							<textarea id="message" placeholder="Message*" required></textarea>
-						</div>
-						<div class="form-item">
-							<p class="small-text">
-								This form is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service
-								apply.
-							</p>
-						</div>
-						<div class="form-item">
-							<button>Submit</button>
-						</div>
-					</form>
-				</div>
-				<div class="contact__info">
-					<div class="contact__address">
-						<h4 class="body-text-main heading">Address</h4>
-						<img class="footer__icon" src="./assets/icons/location.svg" alt="Address icon" />
-						<span>2744 Dunsmuir Ave, Cumberland, BC V0R 1S0</span>
-					</div>
-					<div class="contact__email">
-						<h4 class="body-text-main heading">Email</h4>
-						<img class="footer__icon" src="./assets/icons/mail.svg" alt="Email icon" />
-						<a href="mailto:info@fourqaurters.ca" >
-							<span>info@fourqaurters.ca</span>
-						</a>
-					</div>
-					<div class="contact__phone">
-						<h4 class="body-text-main heading">Phone Number</h4>
-						<img class="footer__icon" src="./assets/icons/call.svg" alt="Phone icon" />
-						<a href="tel:250-400-3687">
-							<span>250-400-3687</span>
-						</a>
-					</div>
-
-
-					<div class="contact__opening-hours">
-						<h4 class="body-text-main heading">Opening Hours</h4>
-						<div class="time">
-							<div class="open-hours__icon">
-								<img class="footer__icon" src="./assets/icons/time.svg" alt="Clock icon" />
-							</div>
-							<div class="open-hours__date">
-								<p>Thursday - Monday 9am - 3pm</p>
-								<p>Tuesday - Wednesday CLOSED</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="google-map" id="map">
-			</div>
-			<div class="copyright">
-				<p class="small-text">©2021 Four Quarters, All Rights Reserved</p>
-				<div class="footer__links">
-					<img class="footer__social-media" src="./assets/icons/facebook.svg" alt="Facebook icon" />
-					<img class="footer__social-media" src="./assets/icons/instagram.svg" alt="Instagram icon" />
-					<img class="footer__social-media" src="./assets/icons/mail.svg" alt="Mail icon" />
-				</div>
-			</div>
-		</div>
-	</section>
-	<script
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA14LGWnHiJtshV5QiipOIWdtIrXeGoefk&callback=initMap&libraries=&v=weekly&channel=2"></script>
-</body>
-
+            <div class="contact__opening-hours">
+              <h4 class="body-text-main heading">Opening Hours</h4>
+              <div class="time">
+                <div class="open-hours__icon">
+                  <img class="footer__icon" src="./assets/icons/time.svg" alt="Clock icon" />
+                </div>
+                <div class="open-hours__date">
+                  <p>Thursday - Monday 9am - 3pm</p>
+                  <p>Tuesday - Wednesday CLOSED</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="google-map" id="map"></div>
+        <div class="copyright">
+          <p class="small-text">©2021 Four Quarters, All Rights Reserved</p>
+          <div class="footer__links">
+            <img class="footer__social-media" src="./assets/icons/facebook.svg" alt="Facebook icon" />
+            <img class="footer__social-media" src="./assets/icons/instagram.svg" alt="Instagram icon" />
+            <img class="footer__social-media" src="./assets/icons/mail.svg" alt="Mail icon" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA14LGWnHiJtshV5QiipOIWdtIrXeGoefk&callback=initMap&libraries=&v=weekly&channel=2"></script>
+  </body>
 </html>

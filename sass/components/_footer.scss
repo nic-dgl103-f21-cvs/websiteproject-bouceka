@@ -1,6 +1,10 @@
 @import '../abstract/variables';
 @import '../abstract/mixins';
 
+/**************************/
+/* FOOTER */
+/**************************/
+
 .footer {
   margin: 2rem 0 5rem 0;
   .flex-container {
@@ -18,7 +22,7 @@
         @include respond(tab-port) {
           margin-left: 0;
         }
-        @media (max-width: 1000px) {
+        @media (max-width: 1024px) {
           margin-left: 2rem;
         }
       }

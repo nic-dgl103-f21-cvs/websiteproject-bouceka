@@ -1,9 +1,14 @@
 @import '../abstract/variables';
 @import '../abstract/mixins';
 
+/**************************/
+/* TOP NAVIGATION */
+/**************************/
+
 hr.divider {
   border-top: 1px solid $color-white;
 }
+
 .sticky {
   top: 0;
   left: 0;
@@ -12,6 +17,7 @@ hr.divider {
   padding: 7rem 0;
   background-size: cover;
 
+	// the sticky looks different in main page because of the hero
   &.main-page {
     background-position: center;
     position: absolute;
@@ -101,6 +107,10 @@ hr.divider {
   display: flex;
   align-items: center;
   justify-content: center;
+
+	@media (min-width: 901px) {
+		display: none;
+	}
 
   hr {
     border: 1px solid $color-white;

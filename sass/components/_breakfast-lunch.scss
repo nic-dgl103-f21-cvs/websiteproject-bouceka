@@ -1,28 +1,18 @@
 @import '../abstract/variables';
 @import '../abstract/mixins';
 
-.menu-overview {
+/**************************/
+/* BREAKFAST AND LUNCH ON MAIN PAGE */
+/**************************/
+
+.section-menu-overview {
   background-color: $color-primary;
   padding: 10rem 0 15rem 0;
-	@media (max-width: 600px) {
+  @include respond(phone) {
     padding: 10rem 0 10rem 0;
   }
 
-  &__image {
-    width: 35rem;
-    height: 35rem;
-    object-fit: cover;
 
-		@media (max-width: 1000px) {
-			aspect-ratio: 4/3;
-			height: 30rem;
-			width: auto;
-			margin: 2rem 0;
-		}
-		@media (max-width: 600px) {
-			height: 25rem;
-		}
-  }
 
   .title-white {
     position: relative;
@@ -30,8 +20,25 @@
     color: $color-white;
   }
 
-  .section {
+  .menu-overview {
     display: flex;
+    justify-content: space-evenly;
+
+		&__image {
+			width: 35rem;
+			height: 35rem;
+			object-fit: cover;
+
+			@media (max-width: 1024px) {
+				aspect-ratio: 4/3;
+				height: 30rem;
+				width: auto;
+				margin: 2rem 0;
+			}
+			@include respond(phone) {
+				height: 25rem;
+			}
+		}
   }
   ul.menu-overview__option {
     color: $color-white;

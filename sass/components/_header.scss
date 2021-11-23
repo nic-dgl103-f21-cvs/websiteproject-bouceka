@@ -1,6 +1,10 @@
 @import '../abstract/variables';
 @import '../abstract/mixins';
 
+/**************************/
+/* HEADER */
+/**************************/
+
 .header {
   background-image: linear-gradient(to right top, rgba(144, 51, 10, 0.8) 80%, rgba(144, 51, 10, 0.7)),
     url('../assets/images/header_background.jpg');
@@ -26,17 +30,6 @@
     @include respond(phone) {
       font-size: 1.8rem;
     }
-  }
-}
-
-.button {
-  text-decoration: none;
-  color: white;
-  font-size: 2rem;
-  padding: 1rem 2rem;
-  &__primary {
-    border: 1px solid $color-secondary;
-    background-color: $color-accent;
   }
 }
 
